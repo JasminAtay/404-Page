@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin-top: 7%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+
+}
+img{
+    z-index: -1;
+    width: 100vh;
+}
+.notfound{
+    z-index: 1;
+    align-items: center;
+    font-size: 10vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(158, 9, 39);
+
+    animation: tracking-in-contract-bck-top 1s cubic-bezier(0.680, -0.550, 0.265, 1.550) 0s both;
+}
+@keyframes tracking-in-contract-bck-top {
+    0% {
+      letter-spacing: 1em;
+      transform: translateZ(400px) translateY(-300px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+        transform: translateZ(0) translateY(0);
+        opacity: 1;
+    }
+}
+  
